@@ -1,0 +1,203 @@
+<!--21561051 박성수!-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Camera Introduction</title>
+    <style>
+      a:link{
+        color:#ffffff;
+        text-decoration:none;
+      }
+      a:visited{
+        color:#ffffff;
+      }
+      a:hover{
+        color:#ffffff;
+        text-decoration:underline;
+      }
+      a:active{
+        color:#ffffff;
+      }
+      body{
+        color: white;
+        margin: 0 0 0 0;
+        background-color: black;
+      }
+      body::-webkit-scrollbar{
+        width: 0px;
+      }
+      #logo{
+       font-style: italic;
+       position:absolute;
+       margin:0 0 0 50px;
+       top:0px;
+      }
+      #picture {
+        margin-top: 100px;
+        text-align: center;
+      }
+      #picture table{
+        width:60%;
+        height:100%;
+        margin:auto;
+        font-size: 17px;
+      }
+      #picture img{
+        height:390px;
+        padding: 60px 30px 0 30px;
+        margin: 0 0 50px 0;
+      }
+      #picture td{
+        padding: 0 0 20px 0;
+      }
+      #black{
+        width:150px;
+      }
+      #textleft{
+        text-align:left;
+        font-weight:bold;
+      }
+      #textbold{
+        font-weight:bold;
+        font-size: 27px;
+      }
+      #Navigation li{
+        padding: 0 40px 0 0;
+      }
+      #Navigation {
+        text-align:right;
+        padding: 20px 50px 0 0 ;
+      }
+
+            .menubar{
+            border:none;
+            border:0px;
+            margin:0px;
+            padding:0 0 0 0;
+            font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+            font-size:14px;
+            font-weight:bold;
+            float: right;
+            }
+
+            .menubar ul{
+            height:50px;
+            list-style:none;
+            margin:0;
+            padding:0;
+            }
+
+            .menubar li{
+            float:left;
+            padding:0 0 0 0;
+            }
+
+            .menubar li a{
+            color:#ffffff;
+            display:block;
+            font-weight:normal;
+            line-height:30px;
+            margin:0px;
+            padding:0px 0px;
+            text-align:center;
+            text-decoration:none;
+            }
+
+            .menubar li a:hover, .menubar ul li:hover a{
+            color:#FFFFFF;
+            text-decoration:none;
+            }
+
+            .menubar li ul{
+            display:none;
+            height:auto;
+            padding:0px;
+            margin:0px;
+            border:0px;
+            position:absolute;
+            width:200px;
+            z-index:200;
+            }
+
+            .menubar li:hover ul{
+            display:block;
+            }
+
+            .menubar li li {
+            display:block;
+            float:none;
+            margin:0px;
+            padding:0px;
+            width:200px;
+            }
+
+            .menubar li:hover li a{
+            margin-top:15px;
+            background:none;
+            }
+
+            .menubar li ul a{
+            display:block;
+            height:50px;
+            font-size:12px;
+            font-style:normal;
+            margin:0px;
+            padding:0px 10px 0px 15px;
+            text-align:left;
+            }
+
+            .menubar li ul a:hover, .menubar li ul li:hover a{
+            width:80px;
+            margin-top:15px;
+            background: rgb(300,300,300);
+            border:0px;
+            color:#000000;
+            text-decoration:none;
+            }
+
+            .menubar p{
+            clear:left;
+            }
+      </style>
+  </head>
+
+  <body>
+    <div id="logo"> <h1><a href="index.html">EyE lenz</a></h1> </div>
+    <ul id="Navigation">
+      <div class="menubar">
+      <ul>
+        <li><a href="myintroduce.html">My introduce</a></li>
+        <li><a href="Camera.html">Camera</a></li>
+        <li><A href="photogallery.html" id="current">Photo Gallery</a>
+          <ul>
+            <li><A href="photogallery1.html">Magic Hole</a></li>
+              <li><A href="photogallery2.html">GalaxyNote4</a></li>
+                <li><A href="photogallery3.html">Nikon D5500</a></li>
+                </ul>
+                </li>
+      </ul>
+    </div>
+    </ul>
+      <div id="picture">
+        <table>
+            <h1>사진을 클릭하면 해당 갤러리로 이동합니다</h1>
+          <tr>
+            <Td>
+      <a href="photogallery1.html"><img src="img/magic.png"></a>
+    </td>
+      <Td>
+          <a href="photogallery2.html"><img src="img/GalaxyNote4.png"></a>
+        </td>
+          <td>
+              <a href="photogallery3.html"><img src="img/D5500.png"></a>
+            </td>
+          </tr>
+            <td><div id="textbold">Magic Hole(SCH-W830)</div></td>
+            <td><div id="textbold">Galaxy Note 4</div></td>
+            <td><div id="textbold">Nikon D5500</div></td>
+          </tr>
+            </table>
+            </div>
+  </body>
+</html>

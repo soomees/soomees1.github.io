@@ -1,0 +1,438 @@
+<!--21561051 박성수!-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Galaxy Note 4 Gallery</title>
+    <style>
+      a:link{
+        color:#ffffff;
+        text-decoration:none;
+      }
+      a:visited{
+        color:#ffffff;
+      }
+      a:hover{
+        color:#ffffff;
+        text-decoration:underline;
+      }
+      a:active{
+        color:#ffffff;
+      }
+      body{
+        color: white;
+        margin: 0 0 0 0;
+        background-color: black;
+      }
+      body::-webkit-scrollbar{
+        width: 0px;
+      }
+      #logo{
+       font-style: italic;
+       position:absolute;
+       margin:0 0 0 50px;
+       top:0px;
+      }
+      #picture {
+        margin-top: 100px;
+        text-align: center;
+      }
+      #picture table{
+        width:60%;
+        height:100%;
+        margin:auto;
+        font-size: 17px;
+      }
+      #picture img{
+        height:390px;
+        padding: 60px 30px 0 30px;
+        margin: 0 0 50px 0;
+      }
+      #picture td{
+        padding: 0 0 20px 0;
+      }
+      #black{
+        width:150px;
+      }
+      #textleft{
+        text-align:left;
+        font-weight:bold;
+      }
+      #textbold{
+        font-weight:bold;
+        font-size: 27px;
+      }
+      #Navigation li{
+        padding: 0 40px 0 0;
+      }
+      #Navigation {
+        text-align:right;
+        padding: 20px 50px 0 0 ;
+      }
+
+            .menubar{
+            border:none;
+            border:0px;
+            margin:0px;
+            padding:0 0 0 0;
+            font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+            font-size:14px;
+            font-weight:bold;
+            float: right;
+            }
+
+            .menubar ul{
+            height:50px;
+            list-style:none;
+            margin:0;
+            padding:0;
+            }
+
+            .menubar li{
+            float:left;
+            padding:0 0 0 0;
+            }
+
+            .menubar li a{
+            color:#ffffff;
+            display:block;
+            font-weight:normal;
+            line-height:30px;
+            margin:0px;
+            padding:0px 0px;
+            text-align:center;
+            text-decoration:none;
+            }
+
+            .menubar li a:hover, .menubar ul li:hover a{
+            color:#FFFFFF;
+            text-decoration:none;
+            }
+
+            .menubar li ul{
+            display:none;
+            height:auto;
+            padding:0px;
+            margin:0px;
+            border:0px;
+            position:absolute;
+            width:200px;
+            z-index:200;
+            }
+
+            .menubar li:hover ul{
+            display:block;
+            }
+
+            .menubar li li {
+            display:block;
+            float:none;
+            margin:0px;
+            padding:0px;
+            width:200px;
+            }
+
+            .menubar li:hover li a{
+            margin-top:15px;
+            background:none;
+            }
+
+            .menubar li ul a{
+            display:block;
+            height:50px;
+            font-size:12px;
+            font-style:normal;
+            margin:0px;
+            padding:0px 10px 0px 15px;
+            text-align:left;
+            }
+
+            .menubar li ul a:hover, .menubar li ul li:hover a{
+            width:80px;
+            margin-top:15px;
+            background: rgb(300,300,300);
+            border:0px;
+            color:#000000;
+            text-decoration:none;
+            }
+
+            .menubar p{
+            clear:left;
+            }
+
+            .flat_card {
+             float:left;
+             width: 45%;
+             background-color: #fff;
+             height: 100%;
+             margin-top:30px;
+             margin-left: 20px;
+             margin-right: 20px;
+             padding:15px;
+            }
+            .flat_card1{
+             float:left;
+             width: 94%;
+             background-color: #fff;
+             height: 100%;
+             margin-top:30px;
+             margin-left: 20px;
+             margin-right: 20px;
+             padding:15px;
+            }
+            .card_top{
+             /*기본적으로 position의 세팅값은:static; 으로 맞춰져 있음*/
+            }
+            .card_bottom{
+              color:#000000;
+             padding:5px;
+             font-size: 10px;
+            }
+            .card_bottom dt{
+             font-size:  16px;
+             font-weight: bold;
+            }
+            .card_bottom dd{
+             margin: 0px;
+             color: #8e8e8e;
+            }
+            .img_script{
+             background-color: black;
+             position: relative;
+             color:white;
+             bottom: 0px;
+             padding: 10px;
+            }
+            .v_line{
+             border-style: none;
+             border-top: dotted 2px #cccccc;
+            }
+            #con1{
+              margin:50px 5% 20px 7%;
+            }
+            #con1 img{
+              width:100%;
+            }
+          #con1 {
+             display: none;
+             position: relative;
+          }
+          #con2 {
+             display: none;
+             position: relative;
+          }
+          #con2{
+            margin:50px 5% 20px 7%;
+          }
+          #con2 img{
+            width:100%;
+          }
+          #con3 {
+             display: none;
+             position: relative;
+          }
+          #con3{
+            margin:50px 5% 20px 7%;
+          }
+          #con3 img{
+            width:100%;
+          }
+          #tab_wrap{
+            margin: 300px 0 0 0;
+            position: fixed;
+          }
+          #main_aside > #tab1:checked ~ #con1 {
+             display: block;
+          }
+          #main_aside > #tab2:checked ~ #con2 {
+             display: block;
+          }
+          #main_aside > #tab3:checked ~ #con3 {
+             display: block;
+          }
+          #main_aside>#tab_wrap>label {
+             display: block;
+             width: 20px;
+             height: 40px;
+             text-align: center;
+             line-height: 40px;
+             color: white;
+             background: #000000;
+             font-weight: bolder;
+          }
+          #main_aside > #tab1:checked ~ #tab_wrap > label:nth-child(1) {
+             background: white;
+             color: #000000;
+          }
+          #main_aside > #tab2:checked ~ #tab_wrap > label:nth-child(2) {
+             background: white;
+             color: #000000;
+          }
+          #main_aside > #tab3:checked ~ #tab_wrap > label:nth-child(3) {
+             background: white;
+             color: #000000;
+          }
+         input {
+            display: none;
+}
+      </style>
+  </head>
+
+  <body>
+    <div id="logo"> <h1><a href="index.html">EyE lenz</a></h1> </div>
+    <ul id="Navigation">
+      <div class="menubar">
+      <ul>
+        <li><a href="myintroduce.html">My introduce</a></li>
+        <li><a href="Camera.html">Camera</a></li>
+        <li><A href="photogallery.html" id="current">Photo Gallery</a>
+          <ul>
+            <li><A href="photogallery1.html">Magic Hole</a></li>
+              <li><A href="photogallery2.html">GalaxyNote4</a></li>
+                <li><A href="photogallery3.html">Nikon D5500</a></li>
+                </ul>
+                </li>
+      </ul>
+    </div>
+    </ul>
+    <div id="main_aside">
+    <input type="radio" id="tab1" name="tab" checked />
+    <input type="radio" id="tab2" name="tab" />
+    <input type="radio" id="tab3" name="tab" />
+    <div id="tab_wrap">
+    <label for="tab1">1</label>
+    <label for="tab2">2</label>
+    <label for="tab3">3</label>
+    </div>
+    <div id="con1">
+        <!-- *********************Card Start********************* -->
+        <div class="flat_card1">
+          <div class="card_top">
+            <img src="./photogallery2/1.jpg" />
+            <div class="img_script"></div>
+          </div>
+          </div>
+        <!-- *********************Card End********************* -->
+        <!-- *********************Card Start********************* -->
+        <div class="flat_card">
+          <div class="card_top">
+            <img src="./photogallery2/2.jpg" />
+            <div class="img_script"></div>
+          </div>
+          </div>
+        <!-- *********************Card End********************* -->
+        <!-- *********************Card Start********************* -->
+        <div class="flat_card">
+          <div class="card_top">
+            <img src="./photogallery2/3.jpg" />
+            <div class="img_script"></div>
+          </div>
+          </div>
+        <!-- *********************Card End********************* -->
+        <!-- *********************Card Start********************* -->
+        <div class="flat_card">
+          <div class="card_top">
+            <img src="./photogallery2/4.jpg" />
+            <div class="img_script"></div>
+          </div>
+         </div>
+        <!-- *********************Card End********************* -->
+        <!-- *********************Card Start********************* -->
+        <div class="flat_card">
+          <div class="card_top">
+            <img src="./photogallery2/5.jpg" />
+            <div class="img_script"></div>
+          </div>
+         </div>
+        <!-- *********************Card End********************* -->
+        </div>
+
+        <div id="con2">
+            <!-- *********************Card Start********************* -->
+            <div class="flat_card1">
+              <div class="card_top">
+                <img src="./photogallery2/6.jpg" />
+                <div class="img_script"></div>
+              </div>
+             </div>
+            <!-- *********************Card End********************* -->
+            <!-- *********************Card Start********************* -->
+            <div class="flat_card">
+              <div class="card_top">
+                <img src="./photogallery2/7.jpg" />
+                <div class="img_script"></div>
+              </div>
+             </div>
+            <!-- *********************Card End********************* -->
+            <!-- *********************Card Start********************* -->
+            <div class="flat_card">
+              <div class="card_top">
+                <img src="./photogallery2/8.jpg" />
+                <div class="img_script"></div>
+              </div>
+             </div>
+            <!-- *********************Card End********************* -->
+            <!-- *********************Card Start********************* -->
+            <div class="flat_card">
+              <div class="card_top">
+                <img src="./photogallery2/9.jpg" />
+                <div class="img_script"></div>
+              </div>
+             </div>
+            <!-- *********************Card End********************* -->
+            <!-- *********************Card Start********************* -->
+            <div class="flat_card">
+              <div class="card_top">
+                <img src="./photogallery2/10.jpg" />
+                <div class="img_script"></div>
+              </div>
+             </div>
+            <!-- *********************Card End********************* -->
+            </div>
+
+            <div id="con3">
+                <!-- *********************Card Start********************* -->
+                <div class="flat_card1">
+                  <div class="card_top">
+                    <img src="./photogallery2/11.jpg" />
+                    <div class="img_script"></div>
+                  </div>
+                 </div>
+                <!-- *********************Card End********************* -->
+                <!-- *********************Card Start********************* -->
+                <div class="flat_card">
+                  <div class="card_top">
+                    <img src="./photogallery2/12.jpg" />
+                    <div class="img_script"></div>
+                  </div>
+                 </div>
+                <!-- *********************Card End********************* -->
+                <!-- *********************Card Start********************* -->
+                <div class="flat_card">
+                  <div class="card_top">
+                    <img src="./photogallery2/13.jpg" />
+                    <div class="img_script"></div>
+                  </div>
+                 </div>
+                <!-- *********************Card End********************* -->
+                <!-- *********************Card Start********************* -->
+                <div class="flat_card">
+                  <div class="card_top">
+                    <img src="./photogallery2/14.jpg" />
+                    <div class="img_script"></div>
+                  </div>
+                 </div>
+                <!-- *********************Card End********************* -->
+                <!-- *********************Card Start********************* -->
+                <div class="flat_card">
+                  <div class="card_top">
+                    <img src="./photogallery2/15.jpg" />
+                    <div class="img_script"></div>
+                  </div>
+                 </div>
+                <!-- *********************Card End********************* -->
+                </div>
+
+            </div>
+  </body>
+</html>

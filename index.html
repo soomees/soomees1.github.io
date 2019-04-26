@@ -1,0 +1,233 @@
+<!--21561051 박성수!-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Eye Lenz</title>
+    <style>
+      a:link{
+        color:#ffffff;
+        text-decoration:none;
+      }
+      a:visited{
+        color:#ffffff;
+      }
+      a:hover{
+        color:#ffffff;
+        text-decoration:underline;
+      }
+      a:active{
+        color:#ffffff;
+      }
+      body{
+        color: white;
+        margin: 0 0 0 0;
+        background-color: black;
+      }
+      body::-webkit-scrollbar{
+        width: 0px;
+      }
+      #logo{
+        font-style: italic;
+       position:absolute;
+       margin:0 0 0 50px;
+       top:0px;
+      }
+      #Navigation li{
+        padding: 0 40px 0 0;
+      }
+      #Navigation {
+        text-align:right;
+        padding: 20px 50px 0 0 ;
+      }
+      #banner{
+        margin-top: 50px;
+        background-image: url(img/gn1.jpg);
+        background-size: cover;
+        text-align: center;
+        padding: 270px 0 280px 0;
+      }
+      #banner span{
+        opacity: 0.8;
+      }
+      #banner h1{
+        font-size: 100px;
+      }
+      #picture {
+        text-align: center;
+      }
+      #picture table{
+        width:60%;
+        height:100%;
+        margin:auto;
+        text-align: left;
+        font-size: 12px;
+      }
+      #picture img{
+        width:400px;
+        padding: 30px 30px 0 0;
+      }
+
+      .menubar{
+      border:none;
+      border:0px;
+      margin:0px;
+      padding:0 0 0 0;
+      font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+      font-size:14px;
+      font-weight:bold;
+      float: right;
+      }
+
+      .menubar ul{
+      height:50px;
+      list-style:none;
+      margin:0;
+      padding:0;
+      }
+
+      .menubar li{
+      float:left;
+      padding:0 0 0 0;
+      }
+
+      .menubar li a{
+      color:#ffffff;
+      display:block;
+      font-weight:normal;
+      line-height:30px;
+      margin:0px;
+      padding:0px 0px;
+      text-align:center;
+      text-decoration:none;
+      }
+
+      .menubar li a:hover, .menubar ul li:hover a{
+      color:#FFFFFF;
+      text-decoration:none;
+      }
+
+      .menubar li ul{
+      display:none;
+      height:auto;
+      padding:0px;
+      margin:0px;
+      border:0px;
+      position:absolute;
+      width:200px;
+      z-index:200;
+      }
+
+      .menubar li:hover ul{
+      display:block;
+      }
+
+      .menubar li li {
+      display:block;
+      float:none;
+      margin:0px;
+      padding:0px;
+      width:200px;
+      }
+
+      .menubar li:hover li a{
+      margin-top:15px;
+      background:none;
+      }
+
+      .menubar li ul a{
+      display:block;
+      height:50px;
+      font-size:12px;
+      font-style:normal;
+      margin:0px;
+      padding:0px 10px 0px 15px;
+      text-align:left;
+      }
+
+      .menubar li ul a:hover, .menubar li ul li:hover a{
+      margin-top:15px;
+      width:80px;
+      background: rgb(300,300,300);
+      border:0px;
+      color:#000000;
+      text-decoration:none;
+      }
+
+      .menubar p{
+      clear:left;
+      }
+      </style>
+  </head>
+
+  <body>
+    <div id="logo"> <h1><a href="index.html">EyE lenz</a></h1> </div>
+    <ul id="Navigation">
+      <div class="menubar">
+      <ul>
+        <li><a href="myintroduce.html">My introduce</a></li>
+        <li><a href="Camera.html">Camera</a></li>
+        <li><A href="photogallery.html" id="current">Photo Gallery</a>
+          <ul>
+            <li><A href="photogallery1.html">Magic Hole</a></li>
+              <li><A href="photogallery2.html">GalaxyNote4</a></li>
+                <li><A href="photogallery3.html">Nikon D5500</a></li>
+                </ul>
+                </li>
+      </ul>
+    </div>
+    </ul>
+
+    <div id="banner">
+      <h1><span style="background-color:#000000">성수의 감성 갤러리</span></h1>
+      </div>
+      <div id="picture">
+        <table>
+          <tr>
+            <Td>
+      <a href="photogallery1.html"><img src="img/1.jpg"></a>
+    </td>
+      <Td>
+        <a href="photogallery2.html"><img src="img/2.jpg"></a>
+        </td>
+          <td>
+            <a href="photogallery3.html"><img src="img/3.jpg"></a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <h2>Magic Hole</h2>
+        제목: 파도 구름
+        <br>
+        촬영기기: Magic Hole
+        <br>
+        촬영날짜: 2010년 8월 30일
+        <br>
+        장소: 우리 집 앞
+      </td>
+      <td>
+        <h2>Galaxy Note 4</h2>
+        제목: 야 경
+        <br>
+        촬영기기: Galaxy Note 4
+        <br>
+        촬영날짜: 2018년 7월 1일
+        <br>
+        장소: 시드니
+        </td>
+        <td>
+          <h2>Nikon D5500</h2>
+          제목: 산 책
+          <br>
+          촬영기기: Nikon D5500
+          <br>
+          촬영날짜: 2018년 8월 25일
+          <br>
+          장소: 서울
+            </td>
+            </tr>
+            </table>
+            </div>
+  </body>
+</html>
